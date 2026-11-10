@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
   <script src="js/latihan.js" defer></script>
-  <link rel="icon" href="img/foto-profil.png">
+  <script src="js/logika.js" defer></script>
 </head>
 
 <body>
@@ -27,6 +27,7 @@
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </nav>
+      <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
       <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
       <details class="menu-ponsel">
         <summary>Menu</summary>
@@ -34,6 +35,7 @@
           <ul>
             <li><a href="index.html">Beranda</a></li>
             <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="Kalkulator.html">Kalkulator</a></li>
             <li><a href="kontak.html">Kontak</a></li>
           </ul>
         </nav>
@@ -84,13 +86,8 @@
 
         <section class="kartu">
           <h2>Keahlian</h2>
-          <ul>
-            <li>HTML dasar (sedang dipelajari)</li>
-            <li>Mengetik cepat (sedang dipelajari)</li>
-            <li>Desain poster dengan Canva</li>
-            <li>Dapat memahami pelajaran dengan cepat</li>
-            <li>Mudah bekerja sama dengan tim</li>
-          </ul>
+          <ul id="daftar-skill"></ul>
+          <p id="jumlah-skill"></p>
         </section>
       </div>
 

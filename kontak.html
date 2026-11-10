@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
   <script src="js/latihan.js" defer></script>
-  <link rel="icon" href="img/foto-profil.png">
+  <script src="js/logika.js" defer></script>
+
 </head>
 
 <body>
@@ -27,6 +28,7 @@
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </nav>
+      <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
       <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
       <details class="menu-ponsel">
         <summary>Menu</summary>
@@ -34,6 +36,7 @@
           <ul>
             <li><a href="index.html">Beranda</a></li>
             <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="Kalkulator.html">Kalkulator</a></li>
             <li><a href="kontak.html">Kontak</a></li>
           </ul>
         </nav>
@@ -71,8 +74,9 @@
           </p>
           <p>
             <label for="pesan">Pesan</label><br>
-            <textarea id="pesan" name="pesan" rows="5" cols="40" placeholder="Tulis pesanmu di sini"
-              required></textarea>
+            <textarea id="pesan" name="pesan" rows="5" cols="40" maxlength="300" placeholder="Tulis pesanmu di sini"
+              required></textarea><br>
+            <span id="hitung-karakter" class="keterangan">0/300 karakter</span>
           </p>
           <button type="submit">Kirim Pesan</button>
         </form>
