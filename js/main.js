@@ -163,3 +163,17 @@ async function ambilRepo() {
 if (daftarRepo) {
     ambilRepo();
 }
+// sembunyikan repo sitori
+const tombolRepo = document.querySelector("#tombol-repo");
+tombolRepo.addEventListener("click", () => {
+    if (daftarRepo.style.display === "none") {
+    } else {
+        daftarRepo.style.display = "none";
+        tombolRepo.textContent = "Tampilkan Repositori";
+    }
+    if (daftarRepo.style.display === "block") {
+    } else {
+        daftarRepo.style.display = "block";
+        tombolRepo.textContent = "Sembunyikan Repositori";
+    }
+});
