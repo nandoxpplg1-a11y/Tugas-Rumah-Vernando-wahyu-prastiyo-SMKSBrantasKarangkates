@@ -45,65 +45,51 @@
 
   <main>
     <div class="container">
+
+      <!-- Daftar proyek (kartu dibuat oleh JavaScript) -->
       <section>
         <h2>Proyek Saya</h2>
         <p>Kumpulan hasil belajar saya di Kelas Industri UBIG.</p>
 
         <div class="filter">
-
           <button type="button" class="tombol-filter" id="filter-semua">Semua</button>
           <button type="button" class="tombol-filter" id="filter-javascript">JavaScript</button>
           <button type="button" class="tombol-filter" id="filter-html">HTML</button>
           <button type="button" class="tombol-filter" id="filter-css">CSS</button>
-
         </div>
+
         <p id="jumlah-proyek"></p>
         <div class="daftar-kartu" id="daftar-proyek"></div>
-        <article class="kartu">
-          <h3>Form Kontak</h3>
-          <img src="img/proyek-kontak.png"
-            alt="Tangkapan layar form kontak berisi nama, email, nomor HP, keperluan, dan pesan" width="280">
-          <p>Form untuk menghubungi saya. Setiap isian memiliki label dan wajib diisi, sehingga browser menolak form
-            yang masih kosong.</p>
-        </article>
+      </section>
 
-        <article class="kartu">
-          <h3>Tabel Jadwal Belajar</h3>
-          <img src="img/proyek-jadwal.png" alt="Tangkapan layar tabel jadwal belajar mandiri" width="280">
-          <p>Tabel berisi jadwal belajar mandiri saya setiap minggu, disusun dengan thead dan tbody.</p>
-        </article>
-    </div>
+      <!-- Repositori GitHub -->
+      <section class="kartu">
+        <h2>Repositori GitHub Saya</h2>
+        <p>Daftar ini diambil langsung dari GitHub setiap kali halaman dibuka.</p>
+        <button type="button" id="tombol-repo" class="tombol-kecil">Sembunyikan Repositori</button>
+        <p id="status-repo"></p>
+        <ul id="daftar-repo"></ul>
+      </section>
 
-    </section>
+      <!-- FAQ dengan details dan summary -->
+      <section class="kartu">
+        <h2>Pertanyaan yang Sering Diajukan</h2>
+        <details>
+          <summary>Bahasa apa yang dipakai untuk membuat proyek ini?</summary>
+          <p>Proyek di halaman ini dibuat dengan HTML, CSS, dan JavaScript.
+            Pilih tombol kategori di atas untuk melihat proyek per bahasa.</p>
+        </details>
+        <details>
+          <summary>Apakah saya menerima pesanan pembuatan website?</summary>
+          <p>Belum, saya masih belajar. Namun kamu tetap boleh menghubungi saya melalui halaman Kontak.</p>
+        </details>
+      </section>
 
-    <section class="kartu">
-      <h2>Repositori GitHub Saya</h2>
-      <p>Daftar ini diambil langsung dari GitHub setiap kali halaman
-        dibuka.</p>
-      <button class="tombol-repo" class="tombol-kecil">Sembunyikan Repositori</button>
-      <p id="pesan-loading">Daftar repositori sedang di sembunyikan...</p>
-      <section id="daftar-repo-container">
-      <ul id="daftar-repo"></ul>
-    </section>
-
-    <!-- FAQ dengan details dan summary -->
-    <section class="kartu">
-      <h2>Pertanyaan yang Sering Diajukan</h2>
-      <details>
-        <summary>Bahasa apa yang dipakai untuk membuat proyek ini?</summary>
-        <p>Proyek di halaman ini dibuat dengan HTML, CSS, dan JavaScript.
-          Pilih tombol kategori di atas untuk melihat proyek per bahasa.</p>
-      </details>
-      <details>
-        <summary>Apakah saya menerima pesanan pembuatan website?</summary>
-        <p>Belum, saya masih belajar. Namun kamu tetap boleh menghubungi saya melalui halaman Kontak.</p>
-      </details>
-    </section>
     </div>
   </main>
 
   <footer>
-    <p>Kontak: <a href="nandoxpplg1@gmail.com">Gmail</a> |
+    <p>Kontak: <a href="mailto:nandoxpplg1@gmail.com">Gmail</a> |
       <a href="https://github.com/nandoxpplg1-a11y" target="_blank">GitHub</a> |
       <a href="https://www.youtube.com/@nando_wpz" target="_blank">YouTube</a>
     </p>
