@@ -12,7 +12,7 @@ function predikat(nilai) {
         return "C";
     } else {
         return "D";
-    }   
+    }
 }
 
 // Mengambil elemen halaman
